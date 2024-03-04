@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<!-- Register Form  -->
 
 <!DOCTYPE html>
 <html lang="en">

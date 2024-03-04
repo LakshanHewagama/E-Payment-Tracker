@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+<!-- Login form  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
