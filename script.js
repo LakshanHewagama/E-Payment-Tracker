@@ -3,10 +3,7 @@ function confirmDelete() {
 }
 
 
-
-
-
-// not working 
+// Change add form and update form using update button 
 
 function updateOrder() {
     // Hide the add order form container
@@ -17,20 +14,6 @@ function updateOrder() {
     var updateOrderContainer = document.getElementById('update-order-container');
     updateOrderContainer.style.display = 'block';
 }
-
-
-
-
-        // function printTable() {
-        //     // Hide non-printable elements
-        //     document.querySelector('.btn-print').style.display = 'none';
-        //     // Trigger print dialog
-        //     window.print();
-        //     // Show elements again after printing
-        //     document.querySelector('.btn-print').style.display = 'block';
-        // }
-
-        
 
 
 function printTable() {
