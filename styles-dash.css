@@ -1,0 +1,326 @@
+/*--------------------- generel ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #e4e9f7; 
+    width: 1920px;
+}
+
+/*--------------------- navigation bar ---------------- */
+
+.nav{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 60px;
+    z-index: 100;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 25px;
+    color: rgba(76, 68, 182, 0.808);    
+}
+
+.right-links a{
+    padding: 0 10px;
+    margin-right: 25px;   
+}
+
+.btn{
+    height: 35px;
+    background-color: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btn:hover{
+    opacity: 0.82;
+}
+
+
+/*--------------------- summery section ------------------ */
+
+.summery{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: rgb(255, 255, 255); */
+}
+h3{
+    color: #353535;
+}
+
+.box-1{
+    background-color: #00d9ff;
+    padding: 50px;
+    width: 215px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5)   
+}
+
+.box-2{
+    background-color: #ffdb38;
+    padding: 50px;
+    width: 215px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5) 
+}
+
+.box-3{
+    background-color: rgba(49, 204, 88, 0.808);
+    padding: 50px;
+    width: 215px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5)
+
+    
+}
+
+.box-4{
+    background-color: rgba(204, 83, 83, 0.808);
+    padding: 50px;
+    width: 215px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5)
+
+    
+}
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+/*--------------------- filter section ------------------ */
+
+.filter-container{
+    background-color: rgb(255, 255, 255);
+    /* height: 100px; */
+    padding: 30px;
+    /* margin: 40px; */
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex; 
+
+    min-width: 1200px;
+    margin: 20px 20px 20px 100px; ;
+
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5) 
+}
+
+
+.input-filter {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/*--------------------- table section ------------------ */
+
+.table-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 100px;
+    min-width: 1200px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5)
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    text-align: center;
+    padding: 5px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-print{
+    margin: 20px 20px 10px 20px;
+}
+
+.btn-paid{
+    height: 35px;
+    background-color: rgba(49, 204, 88, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0px 10px;
+}
+
+.btn-not-paid{
+    height: 35px;
+    background-color: rgba(204, 83, 83, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;  
+    padding: 0px 10px;
+}
+
+.update-button{
+    height: 35px;
+    background-color: rgba(68, 117, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;  
+    padding: 0px 10px;
+}
+
+.btn-delete{
+    height: 35px;
+    background-color: rgba(218, 181, 61, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s; 
+    padding: 0px 10px;
+}
+
+
+/*--------------------- form section ------------------ */
+
+.form-container{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;    
+    margin: 20px 100px 20px 20px;
+    flex-direction: column;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -70px rgba(0, 0, 0, 0.5)
+}
+
+.form{
+    padding: 20px;
+    text-align: left;
+}
+
+.input-box input{
+    margin-bottom: 10px;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-1{
+    height: 35px;
+    background-color: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+
+.btn-2{
+    height: 35px;
+    background-color: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 20px;
+    padding: 0px 10px;
+}
+
+/*--------------------- footer section ------------------ */
+
+footer {
+    display: flex;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+  
+footer p {
+    text-align: center;
+}
+
+
+
+
