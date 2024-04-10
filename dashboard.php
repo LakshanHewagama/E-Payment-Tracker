@@ -46,7 +46,7 @@ include 'summery.php';
         }
 
     </style> 
-    <title>OPMS</title>
+    <title>E-Payment Tracker</title>
 </head>
 
 <body>
@@ -55,13 +55,30 @@ include 'summery.php';
 
         <div class="nav">
             <div class="logo">
-                <p>Online Shop Payments Managemnt System</p>
+                <p>E - Payment Tracker</p>
             </div>
+            <div></div>
+            <div></div>
+
             <div class="right-links">               
-                <!-- <a href="#">Change Profile</a> -->
-                <a href="logout.php"><button class="btn">Log Out</button></a>
+                    <!-- <a href="#">Change Profile</a> -->
+                    <a href="about-us.php" class="text" >About Us</a>
+                </div>
+
+                <div class="right-links">               
+                    <!-- <a href="#">Change Profile</a> -->
+                    <a href="contact-us.php" class="text"  >Contact Us</a>
+                </div>
+
+                <div class="right-links">               
+                    <!-- <a href="#">Change Profile</a> -->
+                    <a href="logout.php"><button class="btn">Log Out</button></a>
+                </div>
             </div>
+            
         </div>
+        
+
 
         <!-- Summery Scetion  -->
 
@@ -137,9 +154,9 @@ include 'summery.php';
                                     <td>
                                         <?php 
                                             if($order['status'] == 0) {
-                                                echo '<a href="active.php?id=' . $order['id'] .'&status=1"><button class="btn-not-paid">Not Paid</button></a>';
+                                                echo '<a href="payment-status.php?id=' . $order['id'] .'&status=1"><button class="btn-not-paid">Not Paid</button></a>';
                                             } else {
-                                                echo '<a href="active.php?id=' . $order['id'] .'&status=0"><button class="btn-paid">Paid</button></a>';
+                                                echo '<a href="payment-status.php?id=' . $order['id'] .'&status=0"><button class="btn-paid">Paid</button></a>';
                                             }
                                         ?>   
                                     </td>

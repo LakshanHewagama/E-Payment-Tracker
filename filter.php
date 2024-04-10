@@ -12,19 +12,20 @@ if (!isset($_SESSION['user_id'])) {
 // Retrieve user ID from session
 $user_id = $_SESSION['user_id'];
 
-// Construct the base SQL query
+// base SQL query
 $sql = "SELECT * FROM orders WHERE user_id='$user_id'";
 
-// Check if form has been submitted
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // Check if tracking number is provided
+    
+    // filter by tracking number
     if (!empty($_GET['trackingNumber'])) {
         $trackingNumber = mysqli_real_escape_string($conn, $_GET['trackingNumber']);
         $sql .= " AND trackingNumber LIKE '%$trackingNumber%'";
         
     }
 
-    // Check if status is provided
+    // filter by paid or not
     if (isset($_GET['status'])) {
         if ($_GET['status'] === '0' || $_GET['status'] === '1') {
             $status = mysqli_real_escape_string($conn, $_GET['status']);
@@ -32,11 +33,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
 
-    // Check if date is provided
+    // filter by date
     if (!empty($_GET['date'])) {
+
         $date = mysqli_real_escape_string($conn, $_GET['date']);
-        $sql .= " AND date='$date'";
+        
+        $formatted_date = date('Y-m-d', strtotime($date));
+        
+        $sql .= " AND DATE(payment_date) = '$formatted_date'";
     }
+
 }
 
 // Execute the SQL query

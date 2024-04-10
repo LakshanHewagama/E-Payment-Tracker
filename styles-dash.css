@@ -19,22 +19,33 @@ body{
     background: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     line-height: 60px;
     z-index: 100;
     border-bottom: 1px solid #e6e6e6;
 }
 
 .logo{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     margin-left: 25px;
-    color: rgba(76, 68, 182, 0.808);    
+    color: rgba(76, 68, 182, 0.808);  
+    margin-right: 1100px;  
 }
 
 .right-links a{
     padding: 0 10px;
     margin-right: 25px;   
+
+}
+
+.text{
+    text-decoration: none;
+    color:rgba(76, 68, 182, 0.808);
+}
+
+a:hover{
+    color: rgb(33, 166, 206);
 }
 
 .btn{

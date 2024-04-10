@@ -1,7 +1,8 @@
 <?php
+
+include 'db.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Include the database connection file
-    include 'db.php';
 
     // Retrieve form data
     $username = $_POST['username'];
@@ -19,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Hash the password for security
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
 
         // Insert user data into the database
         $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
@@ -43,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-auth.css">
-    <title>Document</title>
+    <title>Payment Tracking System</title>
 </head>
 <body>
     <div class="container">
@@ -51,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <header>Sign Up</header>
             <form action="register.php" method="post">
                 <div class="field input">
-                    <label for="">User Name</label>
+                    <label for="">Shop Name </label>
                     <input type="text" name="username" required>
                 </div>
                 <div class="field input">

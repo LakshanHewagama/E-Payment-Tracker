@@ -1,10 +1,10 @@
 <?php
-// session_start();
+
 include 'db.php';
 
 // Check if session variable user_id is set
 if (!isset($_SESSION['user_id'])) {
-    // Redirect to login page or display an error message
+    // Redirect to login page
     header("Location: index.php");
     exit;
 }

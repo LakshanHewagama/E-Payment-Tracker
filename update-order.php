@@ -1,11 +1,10 @@
 <?php
+
 session_start();
+
 include 'db.php';
 
 $user_id = $_SESSION['user_id'];
-
-// Check if order_id is set in the URL parameters
-
 
 if(isset($_POST['order_id'])) {
     $order_id = $_POST['order_id'];

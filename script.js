@@ -16,6 +16,8 @@ function updateOrder() {
 }
 
 
+// printing summery
+
 function printTable() {
     // Hide all columns except the ones you want to print
     var table = document.querySelector('.table-container table');
