@@ -1,2 +1,2 @@
-# online-shop-payment-management-system
-I create online shop payment management system 
+# E - Payment Tracker
+I create online shop payment tracking system
